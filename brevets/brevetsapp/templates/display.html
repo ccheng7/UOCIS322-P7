@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+<table>
+  <thead>
+    <tr>
+        <th>Miles</th>
+        <th>Km</th>
+        <th>Location</th>
+        <th>Open</th>
+        <th>Close</th>
+    </tr>
+    </thead>    
+    <tbody>
+     {% for item in items %}    
+            <tr>
+                <td>{{item.miles}}</td>
+                <td>{{item.km}}</td>
+                <td>{{item.location}}</td>
+                <td>{{item.open}}</td>
+                <td>{{item.close}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ACP Brevet Times Consumer Program</title>
+  </head>
+  <body>
+	  <p>Click Following Button to display the submitted information)</p>
+    <p>Input a number of brevet times instance that you want to see from top into the space in front of corresponding button (optional, default display all instance)</p>
+    <form action='/listAJ' method='POST'>
+      <input name='top' type='text' placeholder="Optional top number" size="20"/>
+      <button>List all times (json)</button>
+    </form>
+    <form action='/listOJ' method='POST'>
+      <input name='top' type='text' placeholder="Optional top number" size="20"/>
+      <button>List open times (json)</button>
+    </form>
+    <form action='/listCJ' method='POST'>
+      <input name='top' type='text' placeholder="Optional top number" size="20"/>
+      <button>List close times (json)</button>
+    </form>
+    <form action='/listAC' method='POST'>
+      <input name='top' type='text' placeholder="Optional top number" size="20"/>
+      <button>List all times (csv)</button>
+    </form>
+    <form action='/listOC' method='POST'>
+      <input name='top' type='text' placeholder="Optional top number" size="20"/>
+      <button>List open times (csv)</button>
+    </form>
+    <form action='/listCC' method='POST'>
+      <input name='top' type='text' placeholder="Optional top number" size="20"/>
+      <button>List close times (csv)</button>
+    </form>
+    <p>Click Below Button to logout account (you will need to login)</p>
+    <form action='/logout'>
+      <button>Logout</button>
+    </form>
+  </body>
+</html>
